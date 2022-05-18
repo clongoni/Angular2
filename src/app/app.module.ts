@@ -1,11 +1,13 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 
-import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { CuerpoIndexComponent } from './cuerpo-index/cuerpo-index.component';
 import { BarraMenuComponent } from './barra-menu/barra-menu.component';
 import { FooterComponent } from './footer/footer.component';
+import { AppRoutingModule } from './app-routing.module';
+import { NosotrosComponent } from './nosotros/nosotros.component'
+
 
 @NgModule({
   declarations: [
@@ -16,7 +18,7 @@ import { FooterComponent } from './footer/footer.component';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

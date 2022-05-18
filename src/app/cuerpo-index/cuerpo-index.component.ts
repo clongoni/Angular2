@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-cuerpo-index',
@@ -7,9 +8,13 @@ import { Component, OnInit } from '@angular/core';
 })
 export class CuerpoIndexComponent implements OnInit {
 
-  constructor() { }
-
+  constructor(private router: Router) { }
+  //HJM Agregue el router por parametro para poder usarlo en el metodo
   ngOnInit(): void {
   }
+  //HJM Metodo que atiende el click dle boton conocenos
+  onClickContacto() {
+      this.router.navigateByUrl('/nosotros');
+    }
 
 }
